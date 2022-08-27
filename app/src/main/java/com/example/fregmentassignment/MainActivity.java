@@ -13,7 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SplashFragment tf=new SplashFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.frameForFragment,tf).commit();
+        if(savedInstanceState==null)
+           getSupportFragmentManager().beginTransaction().replace(R.id.frameForFragment,tf).commit();
     }
 
     public void showTime(View view) {
