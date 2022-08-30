@@ -7,6 +7,7 @@
     android:orientation="horizontal"
     android:weightSum="2">
 
+
     <LinearLayout
         android:background="#696969"
         android:layout_weight="1"

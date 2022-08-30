@@ -6,6 +6,7 @@
     android:id="@+id/dateFragment"
     tools:context=".SplashFragment">
 
+
     <TextView
 
         android:layout_width="wrap_content"

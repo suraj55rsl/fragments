@@ -6,6 +6,7 @@
     android:id="@+id/batteryFragment"
     tools:context=".batteryFragment">
 
+
     <TextView
 
         android:layout_width="wrap_content"
