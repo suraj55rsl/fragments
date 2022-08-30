@@ -3,17 +3,23 @@ package com.example.fregmentassignment;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
+
 public class MainActivity extends AppCompatActivity {
+
+    private static final String COMMON_TAG = "ORIENTATION CHANGES";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SplashFragment tf=new SplashFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.frameForFragment,tf).commit();
+//        if(savedInstanceState==null)
+           getSupportFragmentManager().beginTransaction().replace(R.id.frameForFragment,tf).commit();
     }
 
     public void showTime(View view) {
@@ -39,5 +45,17 @@ public class MainActivity extends AppCompatActivity {
         ft.commit();
         ft.addToBackStack(null);
 
+    }
+    @Override
+    public  void onConfigurationChanged(Configuration newConfig) {
+
+        super.onConfigurationChanged(newConfig);
+        if(newConfig.orientation==Configuration.ORIENTATION_LANDSCAPE){
+            Log.i(COMMON_TAG,"landscape");
+        }
+        else
+        {
+            Log.i(COMMON_TAG,"PORTRAIT");
+        }
     }
 }

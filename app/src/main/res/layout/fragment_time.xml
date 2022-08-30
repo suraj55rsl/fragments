@@ -6,6 +6,7 @@
     android:id="@+id/timeFragment"
     tools:context=".timeFragment">
 
+
     <TextView
 
         android:layout_width="wrap_content"
