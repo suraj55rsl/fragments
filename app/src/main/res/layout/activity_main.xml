@@ -68,8 +68,6 @@
 
             android:layout_gravity="center_vertical|center"
             >
-
-
         </FrameLayout>
 
 

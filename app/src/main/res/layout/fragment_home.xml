@@ -3,14 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/batteryFragment"
-    tools:context=".batteryFragment">
+    android:id="@+id/timeFragment"
+    tools:context=".HomeFragment">
 
     <TextView
+        android:id="@+id/homeFragment"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:text="Assignment"
         android:textColor="@color/white"
-        android:text="Batt_lev:90" />
+        android:textSize="24sp" />
 </FrameLayout>
