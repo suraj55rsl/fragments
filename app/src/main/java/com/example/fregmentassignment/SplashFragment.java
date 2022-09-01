@@ -1,5 +1,4 @@
 package com.example.fregmentassignment;
-
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -23,7 +22,6 @@ public class SplashFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
     public SplashFragment() {
         // Required empty public constructor
     }

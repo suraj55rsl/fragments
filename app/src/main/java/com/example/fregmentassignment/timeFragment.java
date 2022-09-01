@@ -1,5 +1,4 @@
 package com.example.fregmentassignment;
-
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,6 +12,7 @@ import android.view.ViewGroup;
  * Use the {@link timeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
+
 public class timeFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
